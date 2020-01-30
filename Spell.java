@@ -35,8 +35,9 @@ public class Spell{
         int attack = 0;
         if(offense.getMana() >= manaReq){
             offense.setMana -= manaReq;
+            attack += dmg;
             if(defense.isWeakTo(dmgType)){
-                attack += dmg + (dmg/2);
+                attack += (dmg/2);
 
             }
         }
