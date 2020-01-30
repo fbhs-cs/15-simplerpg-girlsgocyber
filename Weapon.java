@@ -27,7 +27,7 @@ public class Weapon{
         return this.WEAPON_TYPE;
     }
 
-    public String to_String(){
+    public String toString(){
         return String.format("Weapon: %s, damage: %d, damage type: %s",WEAPON_TYPE,dmg,dmgType);
     }
     public int attack(Character enemy){
