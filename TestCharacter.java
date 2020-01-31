@@ -1,26 +1,5 @@
 public class TestCharacter{
 
-    // public static void testIsWeakTo(Character c){
-        
-    // }
-
-    // public static void testAddXP(Character c){
-
-    // }
-
-    // public static void testGetXP(Character c){
-
-    // }
-
-
-    // public static void testSetLevel(Character c){
-    //     c.setLevel(9001);
-    // }
-
-    // public static void testGetLevel(Character c){
-    //     System.out.println(c.getLevel());
-    // }
-
     public static void main(String[] args) {
         Character bob = new Character("Bob", "Love", 7);
         bob.setHP(1000);
@@ -36,15 +15,15 @@ public class TestCharacter{
         System.out.println("Health: " + bob.getHP());
         System.out.println("XP: " + bob.getXP());
         System.out.println("Get Speed: " + bob.getSpeed());
-
         bob.takeDmg(500);
         System.out.println("Take 500 dmg: " + bob.getHP());
         System.out.println("Alive? " + bob.isAlive());
         System.out.println("Mana: " + bob.getMana());
-
+        bob.takeDmg(500);
+        System.out.println("Take 500 dmg: " + bob.getHP());
+        System.out.println("Alive? " + bob.isAlive());
         
 
-        
         
 
     }
