@@ -3,7 +3,7 @@ public class Weapon{
     private int dmg;
     private String dmgType;
     private double crit;
-    private String WEAPON_TYPE;
+    private String WeaponType;
 
     public Weapon(int dmg, String dmgType, double crit){
         this.dmg = dmg;
@@ -24,7 +24,7 @@ public class Weapon{
     }
 
     public String getWeaponType(){
-        return this.WEAPON_TYPE;
+        return this.WeaponType;
     }
 
     public String toString(){
