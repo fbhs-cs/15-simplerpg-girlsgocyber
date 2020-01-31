@@ -11,7 +11,7 @@ public class TestCharacter{
         System.out.println();
         System.out.println("Name: " + bob.getName());
         System.out.println("Level: " + bob.getLevel());
-        System.out.println("Test Weakness: " + bob.isWeakTo("Love")); 
+        System.out.println("Test Weakness True: " + bob.isWeakTo("Love")); 
         System.out.println("Health: " + bob.getHP());
         System.out.println("XP: " + bob.getXP());
         System.out.println("Get Speed: " + bob.getSpeed());
