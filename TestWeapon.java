@@ -7,15 +7,16 @@ public class TestWeapon{
     //     System.out
     // }
 
-    // public static void testGetDmg(){
-    //     Weapon foot = new Weapon(3,"Love", .10);
-    //     Character bob = new Character("Bob","Love",7)
-    //     foot.attack(bob);
-    // }
-    // public static void testAttack(){
-    //     Weapon foot = new Weapon(3,"Love", .10);
-    //     Character bob = new Character("Bob","Love",7)
-    //     foot.attack(bob);
+    public static void testGetDmg(){
+        Weapon foot = new Weapon(3,"Love", .10);
+        Character bob = new Character("Bob","Love",7);
+        foot.attack(bob);
+    }
+    public static void testAttack(){
+        Weapon foot = new Weapon(3,"Love", .10);
+        Character bob = new Character("Bob","Love",7);
+        foot.attack(bob);
+    }
     
     public static void main(String[] args){
         Weapon foot = new Weapon(3,"Love", .10);
@@ -26,7 +27,5 @@ public class TestWeapon{
         foot.getDmg();
         foot.getCrit();
         System.out.print(foot);
-
-
     }
 }
