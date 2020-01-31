@@ -54,7 +54,7 @@ public class Weapon{
      * @return a string of stats
      */
     public String toString(){
-        return String.format("Weapon: %s, damage: %d, damage type: %s",WEAPON_TYPE,dmg,dmgType);
+        return String.format("Weapon: %s, damage: %d, damage type: %s",WeaponType,dmg,dmgType);
     }
 
     /**
