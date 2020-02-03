@@ -1,9 +1,9 @@
 import java.util.*;
-public class Weapon{
+public abstract class Weapon{
     private int dmg;
     private String dmgType;
     private double crit;
-    private String WeaponType;
+    protected static String WEAPON_TYPE;
 
     /**
      * @param dmg - the damage of the weapon
@@ -46,7 +46,8 @@ public class Weapon{
      * @return name of wepaon
      */
     public String getWeaponType(){
-        return this.WeaponType;
+        WEAPON_TYPE = "weapon";
+        return WEAPON_TYPE;
     }
 
     /**
@@ -54,21 +55,11 @@ public class Weapon{
      * @return a string of stats
      */
     public String toString(){
-        return String.format("Weapon: %s, damage: %d, damage type: %s",WeaponType,dmg,dmgType);
+        return String.format("Weapon: %s, damage: %d, damage type: %s",getWeaponType(),dmg,dmgType);
     }
 
     /**
      * returns the damage of an attack with the weapon
      * @return damage of the weapons attack
      */
-    public int attack(Character enemy){
-        int damage = (int) (Math.random() * dmg) + (int) (.5 * dmg);
-        if(enemy.isWeakTo(dmgType)){
-            damage += .5 * damage;
-        }
-        if(Math.random() < getCrit()){
-            damage *= 2;
-        }
-        return damage;
-    }
-}
+    public abstract int attack(Character enemy);
