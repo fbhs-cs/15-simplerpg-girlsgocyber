@@ -1,8 +1,8 @@
-public class Spell{
+public abstract class Spell{
     private int dmg;
     private String dmgType;
     private int manaReq;
-    private static String SPELL_TYPE;
+    protected static String SPELL_TYPE = "Spell";
 
     /**
      * 
@@ -16,9 +16,6 @@ public class Spell{
         this.dmg = dmg; 
         this.dmgType = dmgType;
         this.manaReq = manaReq;
-
-        //For testing
-        System.out.println("character created.");
     }
 
     /**
@@ -31,18 +28,18 @@ public class Spell{
      * and checks/subtractsmana from offense 
      * 
      */
-    public int cast (Character offense, Character defense){
-        int attack = 0;
-        if(offense.getMana() >= manaReq){
-            offense.setMana(offense.getMana() - manaReq);
-            attack += dmg;
-            if(defense.isWeakTo(dmgType)){
-                attack += (dmg/2);
+    public abstract int cast (Character offense, Character defense);//{
+    //     int attack = 0;
+    //     if(offense.getMana() >= manaReq){
+    //         offense.setMana(offense.getMana() - manaReq);
+    //         attack += dmg;
+    //         if(defense.isWeakTo(dmgType)){
+    //             attack += (dmg/2);
 
-            }
-        }
-        return attack;
-    }
+    //         }
+    //     }
+    //     return attack;
+    // }
 
     /**
      * 
