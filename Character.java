@@ -1,12 +1,12 @@
 import java.util.*;
 import java.lang.*;
-public class Character{
+public abstract class Character{
     private int hp,xp,speed,mana;
     private String name;
-    private static String CLASS_NAME;
+    protected static String CLASS_NAME = "Character";
     // private Weapon weapon;
     // private Spell spell;
-    private boolean hasWeapon, hasSpell;
+    // private boolean hasWeapon, hasSpell;
     private String weakness;
 
 
@@ -23,6 +23,10 @@ public class Character{
 
     public int getXP(){
         return xp;
+    }
+
+    public void addXP(int more){
+        xp+=more;
     }
 
     public int getMana(){
@@ -82,10 +86,7 @@ public class Character{
         return speed;
     }
 
-    public void chooseAction(Character target){
-        target.takeDmg(5);
-        System.out.printf("%s uses the popular masses to harry %s",name,target.getName());
-    }
+    public abstract void chooseAction(Character target);
 
     public String toString(){
         return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
