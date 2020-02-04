@@ -29,17 +29,17 @@ public abstract class Spell{
      * 
      */
     public abstract int cast (Character offense, Character defense);//{
-    //     int attack = 0;
-    //     if(offense.getMana() >= manaReq){
-    //         offense.setMana(offense.getMana() - manaReq);
-    //         attack += dmg;
-    //         if(defense.isWeakTo(dmgType)){
-    //             attack += (dmg/2);
+        //     int attack = 0;
+        //     if(offense.getMana() >= manaReq){
+        //         offense.setMana(offense.getMana() - manaReq);
+        //         attack += dmg;
+        //         if(defense.isWeakTo(dmgType)){
+        //             attack += (dmg/2);
 
-    //         }
-    //     }
-    //     return attack;
-    // }
+        //         }
+        //     }
+        //     return attack;
+        // }
 
     /**
      * 
