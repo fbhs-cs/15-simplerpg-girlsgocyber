@@ -6,6 +6,14 @@ public class Sorcerer extends Character{
 
     }
 
+    public void chooseAction(Character target){
+        
+
+
+    }
+
+
+
     
 
 
