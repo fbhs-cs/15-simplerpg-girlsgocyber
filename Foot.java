@@ -3,9 +3,9 @@ public class Foot extends Character{
     private Spell spell;
 
 
-    public Foot(String name, Spell spell){
+    public Foot(String name){
         super(name, "fire", 30);
-        this.spell = spell;
+        this.spell = new HeavenlyStompTechnique();
         CLASS_NAME = "Foot";
         setMana(10*getLevel());
     }
