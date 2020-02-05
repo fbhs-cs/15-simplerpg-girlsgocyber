@@ -50,7 +50,7 @@ public abstract class Character{
         return (int) Math.sqrt((double)xp);
     }
 
-    private int getMaxHP(){
+    public int getMaxHP(){
         return this.getLevel()*12;
     }
 
