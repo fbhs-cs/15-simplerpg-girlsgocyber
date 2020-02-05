@@ -5,7 +5,6 @@ public class SummonDragon extends Spell{
         SPELL_TYPE = "Dragon";
     }
 
-
     public int cast (Character offense, Character defense){
         int attack = 0;
         if(offense.getMana() >= getManaReq()){
