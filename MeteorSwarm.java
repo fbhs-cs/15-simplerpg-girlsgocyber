@@ -1,6 +1,6 @@
 public class MeteorSwarm extends Spell{
-    public MeteorSwarm(int dmg, String dmgType, int manaReq){
-        super(dmg,dmgType,manaReq);
+    public MeteorSwarm(){
+        super(25,"Fire",10);
         SPELL_TYPE = "meteor swarm";
     }
 
