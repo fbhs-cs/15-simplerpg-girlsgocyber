@@ -1,9 +1,11 @@
 import java.util.Scanner;
 public class Sorcerer extends Character{
-    public Sorcerer(String name){
-        super(name, "Fire", 5);
+    private Spell spell;
+    public Sorcerer(){
+        super("Old Guy Sorcerer", "Water", 5);
         this.spell = new SummonDragon();
         CLASS_NAME = "Sorcerer";
+        setMana(50);
 
     }
 
@@ -13,8 +15,8 @@ public class Sorcerer extends Character{
         while(true){
             try{
         System.out.println("What would you like to do? ");
-        System.out.println("1. drink a mana potion");
-        System.out.println("2. cast a spell");
+        System.out.println("1. Summon a Dragon");
+        System.out.println("2. Hydrate Before You Diedrate (+ 10 Mana)");
         System.out.print("> ");
         choice = Integer.parseInt(options.nextLine());
         if(choice < 1 || choice > 2) {
