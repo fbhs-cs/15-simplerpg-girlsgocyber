@@ -1,6 +1,6 @@
 public class PeterSword extends Weapon{
-    public PeterSword(int dmg, String dmgType){
-        super(dmg,dmgType,.10);
+    public PeterSword(){
+        super(15,"slashing",.10);
         WEAPON_TYPE = "peters sword";
     }
 
