@@ -5,7 +5,7 @@ public class Game {
     static Character player;
 
     // change these to match weapon/spell types
-    static final String[] WEAKNESSES = {"Weakness #1", "Weakness #2", "Weakness #3"};
+    //static final String[] WEAKNESSES = {"Earth", "Fire", "Water", "Air"};
 
     
     
@@ -38,9 +38,9 @@ public class Game {
         while (true) {
             try {
                 System.out.println("What class would you like to play?  Here are your options:");
-                System.out.println("1. Class #1"); // change this
-                System.out.println("2. Class #2"); // change this
-                System.out.println("3. Class #3"); // change this
+                System.out.println("1. Monkey - weak to Earth"); // change this
+                System.out.println("2. Foot - weak to Water"); // change this
+                System.out.println("3. Andres - weak to Fire"); // change this
                 System.out.print("> ");
                 classChoice = Integer.parseInt(in.nextLine());
                 if(classChoice < 1 || classChoice > 3) {
@@ -54,33 +54,33 @@ public class Game {
             }
         }
 
-        int weaknessChoice;
-        while (true) {
-            try {
-                System.out.println("What weakness will your character have?  Here are your options:");
-                for(int i = 0; i < WEAKNESSES.length; i++) {
-                    System.out.printf("%d. %s\n",i+1,WEAKNESSES[i]);
-                }
-                System.out.print("> ");
-                weaknessChoice = Integer.parseInt(in.nextLine());
-                if(weaknessChoice < 1 || weaknessChoice > WEAKNESSES.length) {
-                    System.out.println("Invalid choice!");
-                }
-                break;
+        // int weaknessChoice;
+        // while (true) {
+        //     try {
+        //         System.out.println("What weakness will your character have?  Here are your options:");
+        //         for(int i = 0; i < WEAKNESSES.length; i++) {
+        //             System.out.printf("%d. %s\n",i+1,WEAKNESSES[i]);
+        //         }
+        //         System.out.print("> ");
+        //         weaknessChoice = Integer.parseInt(in.nextLine());
+        //         if(weaknessChoice < 1 || weaknessChoice > WEAKNESSES.length) {
+        //             System.out.println("Invalid choice!");
+        //         }
+        //         break;
 
-            } catch (Exception e) {
-                System.out.println("You must enter a number!");
-            }
-        }
+        //     } catch (Exception e) {
+        //         System.out.println("You must enter a number!");
+        //     }
+        // }
 
-        String weakness = WEAKNESSES[weaknessChoice-1];
+        // String weakness = WEAKNESSES[weaknessChoice-1];
 
         if(classChoice == 1)
-            player = new Character(name,weakness,10); // This needs to be updated for each class
+            player = new Monkey(name); // This needs to be updated for each class
         else if(classChoice == 2)
-            player = new Character(name, weakness,20); // update for the class
+            player = new Foot(name); // update for the class
         else if(classChoice == 3)
-            player = new Character(name, weakness,5); // update for the class
+            player = new Andres(name); // update for the class
 
         
     }
@@ -91,18 +91,18 @@ public class Game {
      * @return Character the generated enemy
      */
     public static Character makeEnemy() {
-        int randWeakness = (int)(Math.random()*WEAKNESSES.length);
+        // int randWeakness = (int)(Math.random()*WEAKNESSES.length);
 
         // make speed at least 5, and at most player's speed + 4
-        int randSpeed = (int)(Math.random()*player.getSpeed() + 5);
+        // int randSpeed = (int)(Math.random()*player.getSpeed() + 5);
 
         double rand = Math.random();
         if(rand < 0.3) {
-            return new Character("Enemy1",WEAKNESSES[randWeakness],randSpeed); // change to enemy class constructor
+            return new Sorcerer(); // change to enemy class constructor
         } else if (rand < 0.6) {
-            return new Character("Enemy2",WEAKNESSES[randWeakness],randSpeed); // change to enemy class constructor
+            return new Winnie(); // change to enemy class constructor
         } else {
-            return new Character("Enemy3",WEAKNESSES[randWeakness],randSpeed); // change to enemy class constructor
+            return new Klimpaloon(); // change to enemy class constructor
         }
     }
 

@@ -3,7 +3,7 @@ public class Andres extends Character{
     private Weapon weapon;
 
     public Andres(){
-        super("Fire","Andre",25);
+        super("Andres","Fire",25);
         CLASS_NAME = "andres";
         this.weapon = new PeterSword();
     }

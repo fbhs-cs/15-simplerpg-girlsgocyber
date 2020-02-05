@@ -1,13 +1,13 @@
 import java.util.Scanner;
-public class Foot extends Character{
-    private Spell spell;
+public class Klimpaloon extends Character{
+    private Weapon weapon;
 
 
-    public Foot(String name){
-        super(name, "Water", 30);
-        this.spell = new HeavenlyStompTechnique();
-        CLASS_NAME = "Foot";
-        setMana(10*getLevel());
+    public Klimpaloon(){
+        super("Klimpy", "fire", 25);
+        this.weapon = new MilkPail();
+        CLASS_NAME = "Klimpaloon, the Magical Old-Timey Bathing Suit";
+        
     }
 
     public void chooseAction(Character target){
@@ -16,8 +16,8 @@ public class Foot extends Character{
         while(true){
             try{
         System.out.println("What would you like to do? ");
-        System.out.println("1. charge up feet powers (+ 10 mana)");
-        System.out.println("2. cast a spell");
+        System.out.println("1. Attack with ----");
+        System.out.println("2. Taunt");
         System.out.print("> ");
         choice = Integer.parseInt(options.nextLine());
         if(choice == 1 || choice == 2) {
@@ -31,18 +31,18 @@ public class Foot extends Character{
     }
     options.close();
 
-    if(choice==2){
-        target.takeDmg(spell.cast(this,target));
+    if(choice==1){
+        weapon.attack(target);
     }
     else{
-        takeManaPotion();
+        taunt();
     }
 }
 
 }
 
-    public void takeManaPotion(){
-        setMana(getMana()+5);
+    public void taunt(){
+        System.out.println("NANG NANG NANG");
     }
 
     public String toString(){

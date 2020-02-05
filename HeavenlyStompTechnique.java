@@ -5,7 +5,7 @@ public class HeavenlyStompTechnique extends Spell{
     }
 
     public int cast(Character offense, Character defense){
-               int attack = 0;
+        int attack = 0;
         if(offense.getMana() >= getManaReq()){
             offense.setMana(offense.getMana() - getManaReq());
             attack += getDmg();
@@ -16,5 +16,8 @@ public class HeavenlyStompTechnique extends Spell{
         }
         return attack;
     } 
+    public String toString(){
+        return " used Heavenly Stomp Tecnique";
+    }
     }
 }
