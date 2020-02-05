@@ -5,6 +5,6 @@ public class Andres extends Character{
     }
 
     public int chooseAction(Character hero){
-        
+
     }
 }
