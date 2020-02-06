@@ -1,3 +1,6 @@
+Team Members 
+Rachel, Christian, and Helena
+
 # Simple RPG
 
 In this project, you will work with your group to create and test classes for use in a basic, text-based, RPG game.  We will discuss creating some parent (super) classes.  You will then `extend` (sub-class) the class or interface respectively to add additional functionality.
