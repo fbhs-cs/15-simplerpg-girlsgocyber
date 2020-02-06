@@ -11,7 +11,7 @@ public class Sorcerer extends Character{
 
     public void chooseAction(Character target){
 
-        int choice = 0;
+        int choice = (int)(Math.random()*2)+1;
         // Scanner options = new Scanner(System.in);
         // int choice = 0;
         // while(true){
@@ -33,9 +33,11 @@ public class Sorcerer extends Character{
         // options.close();
 
         if(choice==1){
+            System.out.println("Old Guy Sorcerer has summoned a dragon!"));
             target.takeDmg(spell.cast(this,target));
         }
         else{
+            System.out.println("Old Guy Sorcerer has chosen to hydrate before he diedrates! /n +10 Mana");
             takeManaPotion();
         }
     }
