@@ -112,7 +112,7 @@ public class Game {
         System.out.println(player.getName() + " is fighting " + enemy.getName());
 
         while(player.isAlive() && enemy.isAlive()) {
-            System.out.println(player + " \nvs.\n " + enemy);
+            System.out.println(player + " \nvs. " + enemy);
             if(player.getSpeed() > enemy.getSpeed()) {
                 player.chooseAction(enemy);
                 if(enemy.isAlive()) {
