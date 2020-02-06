@@ -17,6 +17,6 @@ public class HeavenlyStompTechnique extends Spell{
         return attack;
     } 
     public String toString(){
-        return " used Heavenly Stomp Tecnique";
+        return " used Heavenly Stomp Technique";
     }
     }
