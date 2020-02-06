@@ -45,9 +45,9 @@ public class Foot extends Character{
         setMana(getMana()+5);
     }
 
-    public String toString(){
-        return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
-    }
+    // public String toString(){
+    //     return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
+    // }
 
     
 

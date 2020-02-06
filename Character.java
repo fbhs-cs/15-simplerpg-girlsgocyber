@@ -10,10 +10,13 @@ public abstract class Character{
     private String weakness;
 
 
+
     public Character(String name, String weakness, int speed){
         this.name = name;
         this.weakness = weakness;
         this.speed = speed;
+        this.xp = 1;
+        setHP(getMaxHP());
     }
 
     
@@ -89,7 +92,7 @@ public abstract class Character{
     public abstract void chooseAction(Character target);
 
     public String toString(){
-        return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
+        return String.format("\n%s the %s Level : %d HP : %d",getName(),CLASS_NAME, getLevel(), getHP());
     }
 
 

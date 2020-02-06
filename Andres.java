@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class Andres extends Character{
     private Weapon weapon;
 
-    public Andres(){
-        super("Andres","Fire",25);
-        CLASS_NAME = "andres";
+    public Andres(String name){
+        super(name,"Fire",25);
+        CLASS_NAME = "Andres";
         this.weapon = new PeterSword();
     }
 

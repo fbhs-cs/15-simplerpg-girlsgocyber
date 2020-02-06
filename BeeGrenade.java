@@ -7,7 +7,7 @@ public class BeeGrenade extends Weapon{
 
     public int attack(Character enemy){
         int attack = (int) (Math.random() * getDmg()) + (int) (.5 * getDmg());
-        if(enemy.isWeakTo(getDmgType()){
+        if(enemy.isWeakTo(getDmgType())){
             attack += (getDmg() / 2);
         }
         if(Math.random() < getCrit()){

@@ -39,15 +39,15 @@ public class Klimpaloon extends Character{
     }
 }
 
-}
+
 
     public void taunt(){
         System.out.println("NANG NANG NANG");
     }
 
-    public String toString(){
-        return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
-    }
+    // public String toString(){
+    //     return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
+    // }
 
     
 

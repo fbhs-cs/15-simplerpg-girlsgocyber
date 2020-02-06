@@ -20,4 +20,3 @@ public class HeavenlyStompTechnique extends Spell{
         return " used Heavenly Stomp Tecnique";
     }
     }
-}

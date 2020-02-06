@@ -17,6 +17,10 @@ public class SummonDragon extends Spell{
         return attack;
     }
 
+    public String toString(){
+        return " summoned a dragon";
+    }
+
     
 
 

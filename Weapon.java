@@ -63,3 +63,5 @@ public abstract class Weapon{
      * @return damage of the weapons attack
      */
     public abstract int attack(Character enemy);
+
+}

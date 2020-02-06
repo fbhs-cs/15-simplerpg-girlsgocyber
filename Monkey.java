@@ -6,7 +6,8 @@ public class Monkey extends Character{
     public Monkey(String name){
         super(name, "Earth", 10);
         CLASS_NAME = "Monkey";
-        this.weapon = new BeeGrenade();        
+        this.weapon = new BeeGrenade();
+
     }
 
     public void chooseAction(Character target){
@@ -42,9 +43,9 @@ public class Monkey extends Character{
 
 
 
-    public String toString(){
-        return getName();
-    }
+    // public String toString(){
+    //     return getName();
+    // }
 
 
 }

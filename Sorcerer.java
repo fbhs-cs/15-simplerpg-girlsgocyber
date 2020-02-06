@@ -14,7 +14,7 @@ public class Sorcerer extends Character{
         int choice = (int)(Math.random()*2)+1;
 
         if(choice==1){
-            System.out.println("Old Guy Sorcerer has summoned a dragon!"));
+
             target.takeDmg(spell.cast(this,target));
         }
         else{
