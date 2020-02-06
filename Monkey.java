@@ -43,7 +43,7 @@ public class Monkey extends Character{
 
 
     public String toString(){
-        return name;
+        return getName();
     }
 
 
