@@ -16,4 +16,8 @@ public class MeteorSwarm extends Spell{
         }
         return attack;
     }
+
+    public String toString(){
+        return " summoned a meteor swarm";
+    }
 }

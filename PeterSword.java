@@ -14,4 +14,7 @@ public class PeterSword extends Weapon{
         }
         return damage;
     }
+    public String toString(){
+        return "attacks with Peters Sword";
+    }
 }
