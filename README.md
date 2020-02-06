@@ -1,4 +1,4 @@
-#Team Members 
+Team Members 
 Rachel, Christian, and Helena
 
 # Simple RPG
