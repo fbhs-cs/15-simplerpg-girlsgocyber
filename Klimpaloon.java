@@ -32,7 +32,7 @@ public class Klimpaloon extends Character{
 //     options.close();
 
     if(choice==1){
-        weapon.attack(target);
+        target.takeDmg(weapon.attack(target));
         System.out.println("Klimpaloon wields his Milk Pail!");
     }
     else{
