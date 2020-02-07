@@ -15,8 +15,8 @@ public class Winnie extends Character{
         }
         else{
             System.out.println("Winnie drinks an hp potion!");
-            if((getMaxHP() + 5) > getMaxHP()){
-                setHP(getMaxHP() + 0);
+            if((getHP() + 5) > getMaxHP()){
+                setHP(getHP() + 0);
             }
             else{
                 setHP(getMaxHP() + 5);
