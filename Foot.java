@@ -50,7 +50,7 @@ public class Foot extends Character{
     }
 
     public String toString(){
-        return String.format("%s the %s Level : %d HP : %d MP: %d",getName(),CLASS_NAME,getLevel(), getHP(),getMana());
+        return String.format("%s Level : %d HP : %d MP: %d",getName(), getLevel(), getHP(),getMana());
     }
 
     

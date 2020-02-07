@@ -92,7 +92,7 @@ public abstract class Character{
     public abstract void chooseAction(Character target);
 
     public String toString(){
-        return String.format("\n%s the %s Level : %d HP : %d",getName(),CLASS_NAME, getLevel(), getHP());
+        return String.format("\n%s Level : %d HP : %d",getName(), getLevel(), getHP());
     }
 
 
