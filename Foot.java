@@ -20,34 +20,38 @@ public class Foot extends Character{
         System.out.println("2. cast a spell");
         System.out.print("> ");
         choice = Integer.parseInt(options.nextLine());
-        if(choice == 1 || choice == 2) {
+        if(choice != 1 && choice != 2) {
             System.out.println("You must type in 1 or 2");
             continue;
         }
-        break;
+        
+            break;
+        
 
     } catch (Exception e) {
         System.out.println("You must type in 1 or 2");
-    }
-    options.close();
+    }}
+ 
 
     if(choice==2){
+        System.out.println(getName()+" the Foot casts Heavenly Stomp Technique!");
         target.takeDmg(spell.cast(this,target));
     }
     else{
         takeManaPotion();
+        System.out.println(getName()+" the Foot's feet are plugged in.");
     }
 }
 
-}
+
 
     public void takeManaPotion(){
         setMana(getMana()+5);
     }
 
-    // public String toString(){
-    //     return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
-    // }
+    public String toString(){
+        return String.format("%s the %s Level : %d HP : %d MP: %d",getName(),CLASS_NAME,getLevel(), getHP(),getMana());
+    }
 
     
 

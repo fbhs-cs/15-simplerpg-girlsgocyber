@@ -29,16 +29,24 @@ public class Monkey extends Character{
             catch (Exception e) {
                 System.out.println("You must type in 1 or 2");
             }
-            options.close();
+        }
+           
 
             if(choice==1){
+                System.out.println(getName()+" the Monkey throws a bee grenade");
                 target.takeDmg(weapon.attack(target));
                 
             }
             else{
-                setHP(getHP() + 10);
+                System.out.println(getName()+" the Monkey takes a Monkey Brain Pause");
+                if((getMaxHP() + 10) > getMaxHP()){
+                    setHP(getMaxHP() + 0);
+                }
+                else{
+                    setHP(getMaxHP() + 10);
+                }
             }
-        }
+        
     }
 
 

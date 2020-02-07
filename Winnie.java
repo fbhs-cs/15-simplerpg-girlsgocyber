@@ -11,8 +11,10 @@ public class Winnie extends Character{
         int choice = (int)(Math.random()*2)+1;
         if(choice==2){
             enemy.takeDmg(spell.cast(this,enemy));
+            System.out.println("Winnie casts Meteor Swarm!");
         }
         else{
+            System.out.println("Winnie drinks an hp potion!");
             if((getMaxHP() + 5) > getMaxHP()){
                 setHP(getMaxHP() + 0);
             }

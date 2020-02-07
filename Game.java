@@ -87,6 +87,7 @@ public class Game {
 
     
     /** 
+     * 
      * Generates an enemy at the same level as this.player
      * @return Character the generated enemy
      */

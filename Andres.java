@@ -28,14 +28,22 @@ public class Andres extends Character{
             catch (Exception e) {
                 System.out.println("You must type in 1 or 2");
             }
-            options.close();
+        }
+           
 
             if(choice==2){
+
                 enemy.takeDmg(weapon.attack(enemy));
+                System.out.print(getName()+" the Andres attacks with Peter's Sword!");
             }
             else{
-                setHP(getMaxHP() + 5);
+                System.out.println(getName()+" the Andres is feeling his new perm!");
+                if((getMaxHP() + 5) > getMaxHP()){
+                    setHP(getMaxHP() + 0);
+                }
+                else{
+                    setHP(getMaxHP() + 5);
+                }
             }
         }
     }
-}

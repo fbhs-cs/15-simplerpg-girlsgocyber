@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 public class Klimpaloon extends Character{
     private Weapon weapon;
 
@@ -6,7 +6,7 @@ public class Klimpaloon extends Character{
     public Klimpaloon(){
         super("Klimpy", "fire", 25);
         this.weapon = new MilkPail();
-        CLASS_NAME = "Klimpaloon, the Magical Old-Timey Bathing Suit";
+        CLASS_NAME = "Klimpaloon";
         
     }
 
@@ -33,8 +33,10 @@ public class Klimpaloon extends Character{
 
     if(choice==1){
         weapon.attack(target);
+        System.out.println("Klimpaloon wields his Milk Pail!");
     }
     else{
+        System.out.println("Klimpaloon taunts!");
         taunt();
     }
 }
@@ -45,9 +47,9 @@ public class Klimpaloon extends Character{
         System.out.println("NANG NANG NANG");
     }
 
-    // public String toString(){
-    //     return String.format("%s : %s Level : %d HP : %d",CLASS_NAME,getName(), getLevel(), getHP());
-    // }
+    public String toString(){
+        return String.format("%10s Level : %3d HP : %3d",CLASS_NAME, getLevel(), getHP());
+    }
 
     
 

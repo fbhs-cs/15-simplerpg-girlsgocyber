@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 public class Sorcerer extends Character{
     private Spell spell;
     public Sorcerer(){
@@ -14,8 +14,9 @@ public class Sorcerer extends Character{
         int choice = (int)(Math.random()*2)+1;
 
         if(choice==1){
-
             target.takeDmg(spell.cast(this,target));
+            System.out.println("Old Guy Sorcerer summons a dragon to attack!");
+
         }
         else{
             System.out.println("Old Guy Sorcerer has chosen to hydrate before he diedrates! /n +10 Mana");
