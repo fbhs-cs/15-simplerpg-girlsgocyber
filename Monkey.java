@@ -40,10 +40,10 @@ public class Monkey extends Character{
             else{
                 System.out.println(getName()+" the Monkey takes a Monkey Brain Pause");
                 if((getMaxHP() + 10) > getMaxHP()){
-                    setHP(getMaxHP() + 0);
+                    setHP(getHP() + 0);
                 }
                 else{
-                    setHP(getMaxHP() + 10);
+                    setHP(getHP() + 10);
                 }
             }
         

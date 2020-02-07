@@ -39,10 +39,10 @@ public class Andres extends Character{
             else{
                 System.out.println(getName()+" the Andres is feeling his new perm!");
                 if((getMaxHP() + 5) > getMaxHP()){
-                    setHP(getMaxHP() + 0);
+                    setHP(getHP() + 0);
                 }
                 else{
-                    setHP(getMaxHP() + 5);
+                    setHP(getHP() + 5);
                 }
             }
         }

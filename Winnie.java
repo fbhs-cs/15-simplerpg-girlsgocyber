@@ -19,7 +19,7 @@ public class Winnie extends Character{
                 setHP(getHP() + 0);
             }
             else{
-                setHP(getMaxHP() + 5);
+                setHP(getHP() + 5);
             }
         }
     }
