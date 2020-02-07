@@ -16,7 +16,7 @@ public class Foot extends Character{
         while(true){
             try{
         System.out.println("What would you like to do? ");
-        System.out.println("1. charge up feet powers (+ 10 mana)");
+        System.out.println("1. charge up feet powers (+ 5 mana)");
         System.out.println("2. cast a spell");
         System.out.print("> ");
         choice = Integer.parseInt(options.nextLine());
